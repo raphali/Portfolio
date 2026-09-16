@@ -1,0 +1,193 @@
+@use "../abstracts" as *;
+
+.windowsproject{
+    display: none;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    height: 96.5vh;
+    z-index: 1;
+
+    &__container{
+        width: 50%;
+        height: 75%;
+        background-color: $windows-black;
+        display: flex;
+        justify-content: center;
+        border-radius: 1.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        filter: brightness(100%);
+        
+
+        &__topwindows {
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            &__input {
+                width: 55%;
+                height: 2.2rem;
+                background-color: $input-grey;
+                margin-right: 10%;
+                border-radius: .5rem;
+                color: white;
+                display: flex;
+                align-items: center;
+                
+                &__p {
+                    margin-left: 2%;
+
+                    &__span {
+                        color: $lastfolder-lightgrey;
+                    }
+                }
+            }
+
+            &__closebtncontainer{
+                width: 10%;
+                display: flex;
+                justify-content: end;
+                margin-right: 1rem;
+
+                &__closebtngrp{
+                    background-color: $grey;
+                    border-radius: 10rem;
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    top: 11rem;
+                    right:31rem;
+
+                    &__closebtn {
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-weight: bold;
+                        background: none;
+                        border: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &__cardcontainer {
+            width: calc(90% + 17px);
+            margin-right: -17px;
+            padding-right: 41px;
+            box-sizing: border-box;
+            height: 90%;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            margin-left: 5%;
+            display: flex;
+            gap: 10%;
+            flex-wrap: wrap;
+            overflow: auto;
+            align-self: end;
+        
+
+            &__card{
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 0.75rem;
+                color: white;
+                background-color: $backgroundproject-grey;
+                border-bottom-left-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+                position: relative;
+                // margin-left: 15px;
+               
+
+                &__situationtagcontainer {
+                    width: calc(24rem - 17px);
+                    height: 2.8rem;
+                    position: absolute;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    &__situationtag {
+                        max-width:100%;
+                        background-color: black;
+                        color: white;
+                        padding: 0rem 0.75rem;
+                        border-radius: 10px;
+                        height: 1.6rem;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+                    }
+                }
+
+                &__img {
+                    border-top-left-radius: .5rem;
+                    border-top-right-radius: .5rem;
+                    width: 100%;
+                }
+
+                &__title {
+                    margin-left: 15px;
+                    margin-bottom: 0px;
+                }
+
+                &__desc {
+                     margin-left: 15px;
+                     margin-right: 15px;
+                }
+
+                &__stacktagcontainer{
+                    display: flex;
+                    gap: 3%;
+                    flex-wrap: wrap;
+                    margin-left: 15px;
+                    margin-right: 15px;
+
+                    &__stacktag{
+                        padding: .25rem .75rem;
+                        background-color: orange;
+                        border-radius: 1rem;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        justify-content: center;
+                        align-items: center;
+                        
+                    }
+                }
+
+                &__btn {
+                    display: flex;
+                    gap: 10px;
+                    width:92.3%;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    margin-top: 16px;
+                    justify-content: space-between;
+
+                    
+                    &__a {
+                        text-decoration: none;
+                        width: 50%;
+                        padding: .30rem;
+                        background-color: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        border-radius: .5rem;
+                    }
+                }
+            }
+
+            &__card:hover {
+                background-color: $hoverproject-grey ;
+            }
+        }
+    }
+}
