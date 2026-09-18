@@ -8,6 +8,13 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div id="reco-container" class="recommendation-windows">
+        <img src="assets/img/logo_fedoRA_bleu.svg" alt="">
+        <h1>Je vous recommande grandement de mettre en plein écran (F11)</h1>
+        <p class="recommendation-windows__p">Merci d'avance !</p>
+        <button id="close-reco-btn" class="recommendation-windows__reco-btn">C'est fait</button>
+    </div>
+
     <img src="assets/img/backgroundscreen.png" alt="" class="background-screen" style="position: absolute; z-index: -1; height: 100vh; width: 100vw; ">
     
     <section class="topbar">
@@ -27,14 +34,44 @@
 
     <nav class="navbarcontainer">
         <div class="navbarcontainer__navbar">
-            <button class="navbarcontainer__navbar__btn-nav"><img src="assets/img/icon_profile.svg" alt="icon profil" class="navbarcontainer__navbar__btn-nav__icon"></button>
-            <button class="navbarcontainer__navbar__btn-nav" id="btn-project"><img src="assets/img/icon_folder.svg" alt="icon projets" class="navbarcontainer__navbar__btn-nav__icon"></button>
-            <button class="navbarcontainer__navbar__btn-nav"><img src="assets/img/icon_stacks.svg" alt="icon stacks" class="navbarcontainer__navbar__btn-nav__icon"></button>
-            <button class="navbarcontainer__navbar__btn-nav" id="btn-contact"><img src="assets/img/icon_contact.svg" alt="icon contact" class="navbarcontainer__navbar__btn-nav__icon"></button>
+            <button class="navbarcontainer__navbar__btn-nav" id="btn-profil"><img src="assets/img/icon_profile.svg" alt="icon profil" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__profil-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav" id="btn-project"><img src="assets/img/icon_folder.svg" alt="icon projets" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__project-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav" id="btn-stacks"><img src="assets/img/icon_stacks.svg" alt="icon stacks" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__stacks-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav" id="btn-contact"><img src="assets/img/icon_contact.svg" alt="icon contact" class="navbarcontainer__navbar__btn-nav__icon"><span class="navbarcontainer__navbar__btn-nav__contact-span"></span></button>
         </div>
     </nav>
 
+    <div id="wdw-profil" class="windowsprofil">
+        <div class="windowsprofil__container">
+            <div class="windowsprofil__container__topwindows">
+                <div class="windowsprofil__container__topwindows__title">
+                    <h2 class="windowsprofil__container__topwindows__title__h2">Profil</h2>
+                </div>
+                <div class="windowsprofil__container__topwindows__closebtncontainer">
+                    <div class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp" id="profil-close-btn">
+                        <button class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp__closebtn">✕</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="wdw-project" class="windowsproject">
+        <div class="windowsproject__navpart">
+            <div class="windowsproject__navpart__topwindows">
+                <p class="windowsproject__navpart__topwindows__p">Fichiers</p>
+            </div>
+            <div class="windowsproject__navpart__fileslist">
+                <div class="windowsproject__navpart__fileslist__fileline" id="p-project-line">
+                    <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="windowsproject__navpart__fileslist__fileline__img">
+                    <p class="windowsproject__navpart__fileslist__fileline__p">Projets</p>
+                </div>
+                <div class="windowsproject__navpart__fileslist__fileline" id="p-stacks-line">
+                    <img src="assets/img/smallicon_stacks.svg" alt="icon stacks" class="windowsproject__navpart__fileslist__fileline__img">
+                    <p class="windowsproject__navpart__fileslist__fileline__p">Stacks</p>
+                </div>
+            </div>
+        </div>
         <div class="windowsproject__container">
             <div class="windowsproject__container__topwindows">
                 <div class="windowsproject__container__topwindows__input">
@@ -161,6 +198,37 @@
         </div>
     </div>
 
+    <div id="wdw-stacks" class="windowsstacks">
+        <div class="windowsstacks__navpart">
+            <div class="windowsstacks__navpart__topwindows">
+                <p class="windowsstacks__navpart__topwindows__p">Fichiers</p>
+            </div>
+            <div class="windowsstacks__navpart__fileslist">
+                <div class="windowsstacks__navpart__fileslist__fileline" id="s-project-line">
+                    <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="windowsstacks__navpart__fileslist__fileline__img">
+                    <p class="windowsstacks__navpart__fileslist__fileline__p">Projets</p>
+                </div>
+                <div class="windowsstacks__navpart__fileslist__fileline" id="s-stacks-line">
+                    <img src="assets/img/smallicon_stacks.svg" alt="icon stacks" class="windowsstacks__navpart__fileslist__fileline__img">
+                    <p class="windowsstacks__navpart__fileslist__fileline__p">Stacks</p>
+                </div>
+            </div>
+        </div>
+        <div class="windowsstacks__container">
+            <div class="windowsstacks__container__topwindows">
+                <div class="windowsstacks__container__topwindows__input">
+                    <p class="windowsstacks__container__topwindows__input__p"> <span class="windowsstacks__container__topwindows__input__p__span"> Portfolio / </span> Stacks</p>
+                    <img src="" alt="">
+                </div>
+                <div class="windowsstacks__container__topwindows__closebtncontainer">
+                    <div id="stacks-close-btn" class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp">
+                        <button class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp__closebtn">✕</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="wdw-contact" class="windowscontact">
         <div class="windowscontact__container">
             <div class="windowscontact__container__topwindows">
@@ -174,7 +242,7 @@
                 </div>
             </div>
             <div class="windowscontact__container__contentpart">
-                <img src="assets/img/logo_fedoRA2.svg" alt="logo Alizier Fedora" class="windowscontact__container__contentpart__fedologo">
+                <img src="assets/img/logo_fedoRA.svg" alt="logo Alizier Fedora" class="windowscontact__container__contentpart__fedologo">
                 <div class="windowscontact__container__contentpart__contactcontainer">
                     <div class="windowscontact__container__contentpart__contactcontainer__card" id="mail">
                         <p class="windowscontact__container__contentpart__contactcontainer__card__p">Mail</p>

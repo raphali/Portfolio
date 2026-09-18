@@ -1,0 +1,67 @@
+@use "../abstracts" as *;
+
+.windowsprofil {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    height: 96.5vh;
+    width: 100vw;
+    z-index: 1;
+
+    &__container {
+        background-color: $backgroundproject-grey;
+        width: 60%;
+        height: 60%;
+        display: flex;
+
+        &__topwindows{
+            display: flex;
+            width: 100%;
+            height: 4rem;
+            align-items: center;
+            justify-content: center;
+
+            &__title {
+                width: 50%;
+                display: flex;
+                justify-content: end;
+                margin-left: 5rem;
+
+                &__h2{
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+
+            &__closebtncontainer {
+                width: 50%;
+                display: flex;
+                justify-content: end;
+                margin-right: 1rem;
+
+                &__closebtngrp{
+                    background-color: $grey;
+                    border-radius: 10rem;
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    top: 11rem;
+                    right:31rem;
+
+                    &__closebtn{
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-weight: bold;
+                        background: none;
+                        border: none;
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+}

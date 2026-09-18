@@ -48,9 +48,9 @@
 .navbarcontainer {
   position: absolute;
   display: flex;
-  top: 91%;
+  top: 89%;
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   justify-content: center;
   z-index: 1000;
 }
@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   background-color: #38383b;
-  border-radius: 1rem;
+  border-radius: 2rem;
   width: 30rem;
   height: 100%;
   justify-content: space-around;
@@ -67,9 +67,22 @@
 .navbarcontainer__navbar__btn-nav {
   background: none;
   border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .navbarcontainer__navbar__btn-nav__icon {
   width: 4rem;
+}
+.navbarcontainer__navbar__btn-nav__project-span, .navbarcontainer__navbar__btn-nav__contact-span, .navbarcontainer__navbar__btn-nav__stacks-span, .navbarcontainer__navbar__btn-nav__profil-span {
+  display: none;
+  position: absolute;
+  border: solid 4px;
+  color: white;
+  border-radius: 1rem;
+  bottom: 8%;
 }
 
 .windowsproject {
@@ -80,13 +93,61 @@
   height: 96.5vh;
   z-index: 1;
 }
+.windowsproject__navpart {
+  height: 75%;
+  width: 12%;
+  background-color: #343436;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  margin-bottom: 5%;
+  position: absolute;
+  left: 15.48%;
+  color: white;
+}
+.windowsproject__navpart__topwindows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.windowsproject__navpart__fileslist {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.windowsproject__navpart__fileslist__fileline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+  padding: 0rem 1rem;
+  border-radius: 8px;
+  width: 82%;
+  height: 2.3rem;
+}
+.windowsproject__navpart__fileslist__fileline__p {
+  font-size: 14px;
+}
+.windowsproject__navpart__fileslist__fileline__img {
+  height: 16px;
+}
+.windowsproject__navpart__fileslist #p-project-line {
+  background-color: #444447;
+}
+.windowsproject__navpart__fileslist #p-stacks-line {
+  background-color: #343436;
+}
+.windowsproject__navpart__fileslist #p-stacks-line:hover {
+  background-color: #444447;
+}
 .windowsproject__container {
   width: 50%;
   height: 75%;
   background-color: #222226;
   display: flex;
   justify-content: center;
-  border-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 5%;
   margin-left: 5%;
@@ -94,7 +155,7 @@
 }
 .windowsproject__container__topwindows {
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -145,8 +206,7 @@
   margin-right: -17px;
   padding-right: 41px;
   box-sizing: border-box;
-  height: 90%;
-  padding-top: 1rem;
+  height: 92%;
   padding-bottom: 2rem;
   margin-left: 5%;
   display: flex;
@@ -272,7 +332,6 @@
 }
 .windowscontact__container__topwindows__title__h2 {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 .windowscontact__container__topwindows__closebtncontainer {
@@ -294,7 +353,6 @@
   right: 31rem;
 }
 .windowscontact__container__topwindows__closebtncontainer__closebtngrp__closebtn {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   background: none;
   border: none;
@@ -342,6 +400,207 @@
 }
 .windowscontact__container__contentpart__contactcontainer #linkedin {
   border-top: solid 1px;
+}
+
+.windowsstacks {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  height: 96.5vh;
+  width: 100vw;
+  z-index: 1;
+}
+.windowsstacks__navpart {
+  height: 75%;
+  width: 12%;
+  background-color: #343436;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  margin-bottom: 5%;
+  position: absolute;
+  left: 15.48%;
+  color: white;
+}
+.windowsstacks__navpart__topwindows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.windowsstacks__navpart__fileslist {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.windowsstacks__navpart__fileslist__fileline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+  padding: 0rem 1rem;
+  border-radius: 8px;
+  width: 82%;
+  height: 2.3rem;
+}
+.windowsstacks__navpart__fileslist__fileline__p {
+  font-size: 14px;
+}
+.windowsstacks__navpart__fileslist__fileline__img {
+  height: 16px;
+}
+.windowsstacks__navpart__fileslist #s-project-line {
+  background-color: #343436;
+}
+.windowsstacks__navpart__fileslist #s-project-line:hover {
+  background-color: #444447;
+}
+.windowsstacks__navpart__fileslist #s-stacks-line {
+  background-color: #444447;
+}
+.windowsstacks__container {
+  width: 50%;
+  height: 75%;
+  background-color: #222226;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  filter: brightness(100%);
+}
+.windowsstacks__container__topwindows {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.windowsstacks__container__topwindows__input {
+  width: 55%;
+  height: 2.2rem;
+  background-color: #343436;
+  margin-right: 10%;
+  border-radius: 0.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.windowsstacks__container__topwindows__input__p {
+  margin-left: 2%;
+}
+.windowsstacks__container__topwindows__input__p__span {
+  color: #a4a4a5;
+}
+.windowsstacks__container__topwindows__closebtncontainer {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+}
+.windowsstacks__container__topwindows__closebtncontainer__closebtngrp {
+  background-color: #38383b;
+  border-radius: 10rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 11rem;
+  right: 31rem;
+}
+.windowsstacks__container__topwindows__closebtncontainer__closebtngrp__closebtn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.recommendation-windows {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.recommendation-windows__p {
+  font-size: 24px;
+}
+.recommendation-windows__reco-btn {
+  background: none;
+  border: solid 1px;
+  color: white;
+  height: 5%;
+  font-size: 20px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.windowsprofil {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  height: 96.5vh;
+  width: 100vw;
+  z-index: 1;
+}
+.windowsprofil__container {
+  background-color: #262629;
+  width: 60%;
+  height: 60%;
+  display: flex;
+}
+.windowsprofil__container__topwindows {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.windowsprofil__container__topwindows__title {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  margin-left: 5rem;
+}
+.windowsprofil__container__topwindows__title__h2 {
+  color: white;
+  font-size: 16px;
+}
+.windowsprofil__container__topwindows__closebtncontainer {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+}
+.windowsprofil__container__topwindows__closebtncontainer__closebtngrp {
+  background-color: #38383b;
+  border-radius: 10rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 11rem;
+  right: 31rem;
+}
+.windowsprofil__container__topwindows__closebtncontainer__closebtngrp__closebtn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

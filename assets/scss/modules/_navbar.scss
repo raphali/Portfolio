@@ -3,9 +3,9 @@
 .navbarcontainer{
     position: absolute;
     display: flex;
-    top: 91%;
+    top: 89%;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     justify-content: center;
     z-index: 1000;
 
@@ -14,7 +14,7 @@
         display: flex;
         align-items: center;
         background-color: $grey;
-        border-radius: 1rem;
+        border-radius: 2rem;
         width: 30rem;
         height: 100%;
         justify-content: space-around;
@@ -22,9 +22,23 @@
         &__btn-nav{
             background:none;
             border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
 
             &__icon {
                 width: 4rem;
+            }
+
+            &__project-span, &__contact-span, &__stacks-span, &__profil-span{
+                display: none;
+                position: absolute;
+                border: solid 4px;
+                color: white;
+                border-radius: 1rem;
+                bottom: 8%;
             }
         }
     }

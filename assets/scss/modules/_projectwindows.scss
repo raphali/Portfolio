@@ -8,13 +8,70 @@
     height: 96.5vh;
     z-index: 1;
 
+    &__navpart{
+        height: 75%;
+        width: 12%;
+        background-color: $input-grey;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        margin-bottom: 5%;
+        position: absolute;
+        left: 15.48%;
+        color: white;
+
+        &__topwindows{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+        }
+
+        &__fileslist{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            &__fileline{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: 6px;
+                padding: 0rem 1rem;
+                border-radius: 8px;
+                width: 82%;
+                height: 2.3rem;
+
+                &__p{
+                    font-size: 14px;
+                }
+
+                &__img{
+                    height: 16px;
+                }
+            }
+
+            #p-project-line {
+                background-color: $openfolder-grey;    
+            }
+
+            #p-stacks-line {
+                background-color: $input-grey;
+            }
+
+            #p-stacks-line:hover {
+                background-color: $openfolder-grey;
+            }
+        }
+    }
+
     &__container{
         width: 50%;
         height: 75%;
         background-color: $windows-black;
         display: flex;
         justify-content: center;
-        border-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
         flex-wrap: wrap;
         margin-bottom: 5%;
         margin-left: 5%;
@@ -23,7 +80,7 @@
 
         &__topwindows {
             width: 100%;
-            height: 4rem;
+            height: 3rem;
             display: flex;
             align-items: center;
             justify-content: end;
@@ -81,8 +138,8 @@
             margin-right: -17px;
             padding-right: 41px;
             box-sizing: border-box;
-            height: 90%;
-            padding-top: 1rem;
+            height: 92%;
+            // padding-top: 1rem;
             padding-bottom: 2rem;
             margin-left: 5%;
             display: flex;
