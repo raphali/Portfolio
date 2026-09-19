@@ -7,6 +7,7 @@ function OpenAndCloseContact(){
     const openbtn = document.getElementById('btn-contact');
     const closebtn = document.getElementById('close-btn');
     const span = document.querySelector('.navbarcontainer__navbar__btn-nav__contact-span');
+    const text = document.getElementById('navp-contact');
 
     openbtn.addEventListener('click', function(){
         contact.style.display = 'flex';
@@ -56,6 +57,14 @@ function OpenAndCloseContact(){
             stacks.style.zIndex="1";
         }
     });
+    openbtn.addEventListener("mouseover", function() {
+        text.style.display = "block";
+        text.style.transition = 'ease 0.5s';
+    });
+    openbtn.addEventListener("mouseout", function() {
+        text.style.display = "none";
+        text.style.transition = ''; 
+    });
 }
 
 function OpenAndCloseProject() {
@@ -64,7 +73,7 @@ function OpenAndCloseProject() {
     const closebtn = document.getElementById('project-close-btn');
     const span = document.querySelector('.navbarcontainer__navbar__btn-nav__project-span');
     const spanStacks = document.querySelector('.navbarcontainer__navbar__btn-nav__stacks-span');
-
+    const text = document.getElementById('navp-project');
 
     openbtn.addEventListener('click', function(){
         project.style.display = 'flex';
@@ -115,7 +124,15 @@ function OpenAndCloseProject() {
             contact.style.zIndex="1";
         }
     });
-    
+
+    openbtn.addEventListener("mouseover", function() {
+        text.style.display = "block";
+        text.style.transition = 'ease 0.5s';
+    });
+    openbtn.addEventListener("mouseout", function() {
+        text.style.display = "none";
+        text.style.transition = ''; 
+    });
 }
 
 function OpenAndCloseStacks() {
@@ -124,6 +141,7 @@ function OpenAndCloseStacks() {
     const span = document.querySelector('.navbarcontainer__navbar__btn-nav__stacks-span');
     const spanProject = document.querySelector('.navbarcontainer__navbar__btn-nav__project-span');
     const closebtn = document.getElementById('stacks-close-btn');
+    const text = document.getElementById('navp-stacks');
 
     openbtn.addEventListener('click', function(){
         stacks.style.display = 'flex';
@@ -142,7 +160,7 @@ function OpenAndCloseStacks() {
             contact.style.zIndex="0";
             profil.style.zIndex="1";
         }
-    })
+    });
 
     secondopenbtn.addEventListener('click', function(){
         stacks.style.display = 'flex';
@@ -161,7 +179,7 @@ function OpenAndCloseStacks() {
             contact.style.zIndex="0";
             profil.style.zIndex="1";
         }
-    })
+    });
 
     closebtn.addEventListener('click', function(){
         stacks.style.display='none';
@@ -175,13 +193,23 @@ function OpenAndCloseStacks() {
             profil.style.filter = 'brightness(100%)';
             contact.style.zIndex="1";
         }
-    })
+    });
+
+    openbtn.addEventListener("mouseover", function() {
+        text.style.display = "block";
+        text.style.transition = 'ease 0.5s';
+    });
+    openbtn.addEventListener("mouseout", function() {
+        text.style.display = "none";
+        text.style.transition = ''; 
+    });
 }
 
 function OpenAndCloseProfil() {
     const openbtn = document.getElementById('btn-profil');
     const span = document.querySelector('.navbarcontainer__navbar__btn-nav__profil-span');
     const closebtn = document.getElementById('profil-close-btn');
+    const text = document.getElementById('navp-profil');
 
     openbtn.addEventListener('click', function(){
         profil.style.display = 'flex';
@@ -230,6 +258,15 @@ function OpenAndCloseProfil() {
             contact.style.filter='brightness(100%)';
             stacks.style.zIndex="1";
         }
+    });
+
+    openbtn.addEventListener("mouseover", function() {
+        text.style.display = "block";
+        text.style.transition = 'ease 0.5s';
+    });
+    openbtn.addEventListener("mouseout", function() {
+        text.style.display = "none";
+        text.style.transition = ''; 
     });
 }
 

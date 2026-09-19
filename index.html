@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="icon" href="assets/img/favicon.png">
     <title>Portfolio</title>
 </head>
 <body>
-    <div id="reco-container" class="recommendation-windows">
-        <img src="assets/img/logo_fedoRA_bleu.svg" alt="">
+    <!-- <div id="reco-container" class="recommendation-windows">
+        <img src="assets/img/logo_fedoRA_bleu.svg" alt="logo fedoraphael">
         <h1>Je vous recommande grandement de mettre en plein écran (F11)</h1>
         <p class="recommendation-windows__p">Merci d'avance !</p>
-        <button id="close-reco-btn" class="recommendation-windows__reco-btn">C'est fait</button>
-    </div>
+        <button id="close-reco-btn" class="recommendation-windows__reco-btn button">C'est fait</button>
+    </div> -->
 
-    <img src="assets/img/backgroundscreen.png" alt="" class="background-screen" style="position: absolute; z-index: -1; height: 100vh; width: 100vw; ">
+    <img src="assets/img/background.png" alt="" class="background-screen" style="position: absolute; z-index: -1; height: 100vh; width: 100vw; ">
     
     <section class="topbar">
         <div class="topbar__leftpart">
@@ -34,10 +35,10 @@
 
     <nav class="navbarcontainer">
         <div class="navbarcontainer__navbar">
-            <button class="navbarcontainer__navbar__btn-nav" id="btn-profil"><img src="assets/img/icon_profile.svg" alt="icon profil" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__profil-span"></span></button>
-            <button class="navbarcontainer__navbar__btn-nav" id="btn-project"><img src="assets/img/icon_folder.svg" alt="icon projets" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__project-span"></span></button>
-            <button class="navbarcontainer__navbar__btn-nav" id="btn-stacks"><img src="assets/img/icon_stacks.svg" alt="icon stacks" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__stacks-span"></span></button>
-            <button class="navbarcontainer__navbar__btn-nav" id="btn-contact"><img src="assets/img/icon_contact.svg" alt="icon contact" class="navbarcontainer__navbar__btn-nav__icon"><span class="navbarcontainer__navbar__btn-nav__contact-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav button" id="btn-profil"><p class="navbarcontainer__navbar__btn-nav__p" id="navp-profil">Mon profil</p><img src="assets/img/icon_profile.svg" alt="icon profil" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__profil-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav button" id="btn-stacks"><p class="navbarcontainer__navbar__btn-nav__p" id="navp-stacks">Mes compétences</p><img src="assets/img/icon_stacks.svg" alt="icon stacks" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__stacks-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav button" id="btn-project"><p class="navbarcontainer__navbar__btn-nav__p" id="navp-project">Mes projets</p><img src="assets/img/icon_folder.svg" alt="icon projets" class="navbarcontainer__navbar__btn-nav__icon"> <span class="navbarcontainer__navbar__btn-nav__project-span"></span></button>
+            <button class="navbarcontainer__navbar__btn-nav button" id="btn-contact"><p class="navbarcontainer__navbar__btn-nav__p" id="navp-contact">Me contacter</p><img src="assets/img/icon_contact.svg" alt="icon contact" class="navbarcontainer__navbar__btn-nav__icon"><span class="navbarcontainer__navbar__btn-nav__contact-span"></span></button>
         </div>
     </nav>
 
@@ -49,9 +50,10 @@
                 </div>
                 <div class="windowsprofil__container__topwindows__closebtncontainer">
                     <div class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp" id="profil-close-btn">
-                        <button class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp__closebtn">✕</button>
+                        <button class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -80,7 +82,7 @@
                 </div>
                 <div class="windowsproject__container__topwindows__closebtncontainer">
                     <div id="project-close-btn" class="windowsproject__container__topwindows__closebtncontainer__closebtngrp">
-                        <button class="windowsproject__container__topwindows__closebtncontainer__closebtngrp__closebtn">✕</button>
+                        <button class="windowsproject__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
                     </div>
                 </div>
             </div>
@@ -98,96 +100,6 @@
                         <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">HTML</p>
                         <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">SCSS</p>
                         <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                            
-                    </div>
-                    <div class="windowsproject__container__cardcontainer__card__btn">
-                        <a href="https://github.com/raphali/ChanvriersDeLOise" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Github</a>
-                        <a href="https://raphali.github.io/ChanvriersDeLOise/" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Site</a>
-                    </div>
-                </div>
-
-                <div class="windowsproject__container__cardcontainer__card">
-                    <div class="windowsproject__container__cardcontainer__card__situationtagcontainer">
-                            <div class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag">
-                                <p class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag__text">en cours</p>
-                            </div>
-                    </div>
-                    <img src="assets/img/site_chanvriers.png" alt="" class="windowsproject__container__cardcontainer__card__img">
-                    <h2 class="windowsproject__container__cardcontainer__card__title">Site Chanvriers de L'Oise</h2>
-                    <p class="windowsproject__container__cardcontainer__card__desc">Site réalisé pour le groupe d'agriculteur "Chanvriers de L'Oise" dans le cadre de mon stage de fin de 2éme année</p>
-                    <div class="windowsproject__container__cardcontainer__card__stacktagcontainer">
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">HTML</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">SCSS</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                            
-                    </div>
-                    <div class="windowsproject__container__cardcontainer__card__btn">
-                        <a href="https://github.com/raphali/ChanvriersDeLOise" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Github</a>
-                        <a href="https://raphali.github.io/ChanvriersDeLOise/" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Site</a>
-                    </div>
-                </div>
-
-                <div class="windowsproject__container__cardcontainer__card">
-                    <div class="windowsproject__container__cardcontainer__card__situationtagcontainer">
-                            <div class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag">
-                                <p class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag__text">en cours</p>
-                            </div>
-                    </div>
-                    <img src="assets/img/site_chanvriers.png" alt="" class="windowsproject__container__cardcontainer__card__img">
-                    <h2 class="windowsproject__container__cardcontainer__card__title">Site Chanvriers de L'Oise</h2>
-                    <p class="windowsproject__container__cardcontainer__card__desc">Site réalisé pour le groupe d'agriculteur "Chanvriers de L'Oise" dans le cadre de mon stage de fin de 2éme année</p>
-                    <div class="windowsproject__container__cardcontainer__card__stacktagcontainer">
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">HTML</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">SCSS</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                            
-                    </div>
-                    <div class="windowsproject__container__cardcontainer__card__btn">
-                        <a href="https://github.com/raphali/ChanvriersDeLOise" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Github</a>
-                        <a href="https://raphali.github.io/ChanvriersDeLOise/" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Site</a>
-                    </div>
-                </div>
-
-                <div class="windowsproject__container__cardcontainer__card">
-                    <div class="windowsproject__container__cardcontainer__card__situationtagcontainer">
-                            <div class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag">
-                                <p class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag__text">en cours</p>
-                            </div>
-                    </div>
-                    <img src="assets/img/site_chanvriers.png" alt="" class="windowsproject__container__cardcontainer__card__img">
-                    <h2 class="windowsproject__container__cardcontainer__card__title">Site Chanvriers de L'Oise</h2>
-                    <p class="windowsproject__container__cardcontainer__card__desc">Site réalisé pour le groupe d'agriculteur "Chanvriers de L'Oise" dans le cadre de mon stage de fin de 2éme année</p>
-                    <div class="windowsproject__container__cardcontainer__card__stacktagcontainer">
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">HTML</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">SCSS</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                            
-                    </div>
-                    <div class="windowsproject__container__cardcontainer__card__btn">
-                        <a href="https://github.com/raphali/ChanvriersDeLOise" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Github</a>
-                        <a href="https://raphali.github.io/ChanvriersDeLOise/" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Site</a>
-                    </div>
-                </div>
-
-                <div class="windowsproject__container__cardcontainer__card">
-                    <div class="windowsproject__container__cardcontainer__card__situationtagcontainer">
-                            <div class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag">
-                                <p class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag__text">en cours</p>
-                            </div>
-                    </div>
-                    <img src="assets/img/site_chanvriers.png" alt="" class="windowsproject__container__cardcontainer__card__img">
-                    <h2 class="windowsproject__container__cardcontainer__card__title">Site Chanvriers de L'Oise</h2>
-                    <p class="windowsproject__container__cardcontainer__card__desc">Site réalisé pour le groupe d'agriculteur "Chanvriers de L'Oise" dans le cadre de mon stage de fin de 2éme année</p>
-                    <div class="windowsproject__container__cardcontainer__card__stacktagcontainer">
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">HTML</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">SCSS</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
-                            
                     </div>
                     <div class="windowsproject__container__cardcontainer__card__btn">
                         <a href="https://github.com/raphali/ChanvriersDeLOise" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Github</a>
@@ -222,7 +134,7 @@
                 </div>
                 <div class="windowsstacks__container__topwindows__closebtncontainer">
                     <div id="stacks-close-btn" class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp">
-                        <button class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp__closebtn">✕</button>
+                        <button class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
                     </div>
                 </div>
             </div>
@@ -237,7 +149,7 @@
                 </div>
                 <div class="windowscontact__container__topwindows__closebtncontainer">
                     <div class="windowscontact__container__topwindows__closebtncontainer__closebtngrp" id="close-btn">
-                        <button class="windowscontact__container__topwindows__closebtncontainer__closebtngrp__closebtn">✕</button>
+                        <button class="windowscontact__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
                     </div>
                 </div>
             </div>
@@ -250,11 +162,11 @@
                     </div>
                     <div class="windowscontact__container__contentpart__contactcontainer__card">
                         <p class="windowscontact__container__contentpart__contactcontainer__card__p">Github</p>
-                        <a class="windowscontact__container__contentpart__contactcontainer__card__a" href="https://github.com/raphali">Lien vers mon Github</a>
+                        <a class="windowscontact__container__contentpart__contactcontainer__card__a" href="https://github.com/raphali" target="_blank">Lien vers mon Github</a>
                     </div>
                     <div class="windowscontact__container__contentpart__contactcontainer__card" id="linkedin">
                         <p class="windowscontact__container__contentpart__contactcontainer__card__p">Linkedin</p>
-                        <a class="windowscontact__container__contentpart__contactcontainer__card__a" href="https://www.linkedin.com/in/rapha%C3%ABl-alizier-846b24372/">Lien vers mon Linkedin</a>
+                        <a class="windowscontact__container__contentpart__contactcontainer__card__a" href="https://www.linkedin.com/in/rapha%C3%ABl-alizier-846b24372/" target="_blank">Lien vers mon Linkedin</a>
                     </div>
                 </div>
             </div>
