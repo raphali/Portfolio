@@ -65,3 +65,170 @@
         }
     }
 }
+
+.windowsprofil-file{
+    display: none;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    height: 96.5vh;
+    width: 100vw;
+    z-index: 1;
+
+    &__navpart{
+        height: 75%;
+        width: 12%;
+        background-color: $input-grey;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        margin-bottom: 5%;
+        position: absolute;
+        left: 15.48%;
+        color: white;
+
+        &__topwindows{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+        }
+
+        &__fileslist{
+            display: grid;
+            flex-direction: column;
+            gap: 2px;
+
+            &__span{
+                border: solid 1px;
+                color: grey;
+                width: 94%;
+                justify-self: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            &__fileline{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: 6px;
+                padding: 0rem 1rem;
+                border-radius: 8px;
+                width: 82%;
+                height: 2.3rem;
+
+                &__p{
+                    font-size: 14px;
+                }
+
+                &__img{
+                    height: 16px;
+                }
+            }
+
+            #pf-project-line {
+                background-color: $input-grey;    
+            }
+
+            #pf-project-line:hover {
+                background-color: $openfolder-grey;
+            }
+
+            #pf-stacks-line {
+                background-color: $openfolder-grey;
+            }
+
+            #pf-document-line:hover {
+                background-color: $openfolder-grey;
+            }
+        }
+    }
+
+    &__container{
+        width: 50%;
+        height: 75%;
+        background-color: $windows-black;
+        display: flex;
+        justify-content: center;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        filter: brightness(100%);
+        
+        &__topwindows {
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            &__input {
+                width: 55%;
+                height: 2.2rem;
+                background-color: $input-grey;
+                margin-right: 10%;
+                border-radius: .5rem;
+                color: white;
+                display: flex;
+                align-items: center;
+                
+                &__p {
+                    margin-left: 2%;
+
+                    &__span {
+                        color: $lastfolder-lightgrey;
+                    }
+                }
+            }
+
+            &__closebtncontainer{
+                width: 10%;
+                display: flex;
+                justify-content: end;
+                margin-right: 1rem;
+
+                &__closebtngrp{
+                    background-color: $grey;
+                    border-radius: 10rem;
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    top: 11rem;
+                    right:31rem;
+
+                    &__closebtn {
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-weight: bold;
+                        background: none;
+                        border: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &__filecontainer{
+            width: 100%;
+            height: 92%;
+            margin-left: 6%;
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: start;
+            overflow: auto;
+
+            &__file{
+                color: white;
+                display: flex;
+                align-items: center;
+                height: 20%;
+                gap: 15px;
+                flex-direction: column;
+            }
+        }
+    }
+}

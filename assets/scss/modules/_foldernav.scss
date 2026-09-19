@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+.folder-nav{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    height: 96.5vh;
+    width: 12vw;
+    z-index: 1;
+    margin-left: 13.62%;
+
+    &__navpart{
+        height: 75%;
+        width: 100%;
+        background-color: $input-grey;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        margin-bottom: 41.5%;
+        position: absolute;
+        left: 15.48%;
+        color: white;
+
+        &__topwindows{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+        }
+
+        &__fileslist{
+            display: grid;
+            flex-direction: column;
+            gap: 2px;
+
+            &__span{
+                border: solid 1px;
+                color: grey;
+                width: 94%;
+                justify-self: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            &__fileline{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: 6px;
+                padding: 0rem 1rem;
+                border-radius: 8px;
+                width: 82%;
+                height: 2.3rem;
+
+                &__p{
+                    font-size: 14px;
+                }
+
+                &__img{
+                    height: 16px;
+                }
+            }
+
+            #pf-project-line {
+                background-color: $input-grey;    
+            }
+
+            #pf-project-line:hover {
+                background-color: $openfolder-grey;
+            }
+
+            #pf-stacks-line {
+                background-color: $input-grey;
+            }
+
+            #pf-document-line:hover {
+                background-color: $openfolder-grey;
+            }
+
+            #pf-stacks-line:hover {
+                background-color: $openfolder-grey;
+            }
+        }
+    }
+}

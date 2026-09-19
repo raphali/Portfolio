@@ -79,14 +79,13 @@
 .navbarcontainer__navbar__btn-nav__p {
   display: none;
   position: absolute;
-  top: -45%;
+  top: -30%;
   background-color: black;
   color: white;
   padding: 0.25rem 1rem;
   border-radius: 1rem;
   font-size: 1rem;
-  border: solid 2px;
-  border-color: #38383b;
+  border: none;
 }
 .navbarcontainer__navbar__btn-nav #navp-contact {
   width: 6rem;
@@ -132,9 +131,17 @@
   height: 3rem;
 }
 .windowsproject__navpart__fileslist {
-  display: flex;
   flex-direction: column;
   gap: 2px;
+  display: grid;
+}
+.windowsproject__navpart__fileslist__span {
+  border: solid 1px;
+  color: grey;
+  width: 94%;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .windowsproject__navpart__fileslist__fileline {
   display: flex;
@@ -159,6 +166,9 @@
   background-color: #343436;
 }
 .windowsproject__navpart__fileslist #p-stacks-line:hover {
+  background-color: #444447;
+}
+.windowsproject__navpart__fileslist #p-document-line:hover {
   background-color: #444447;
 }
 .windowsproject__container {
@@ -274,10 +284,13 @@
 .windowsproject__container__cardcontainer__card__title {
   margin-left: 15px;
   margin-bottom: 0px;
+  margin-top: 19.92px;
 }
 .windowsproject__container__cardcontainer__card__desc {
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .windowsproject__container__cardcontainer__card__stacktagcontainer {
   display: flex;
@@ -455,9 +468,17 @@
   height: 3rem;
 }
 .windowsstacks__navpart__fileslist {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 2px;
+}
+.windowsstacks__navpart__fileslist__span {
+  border: solid 1px;
+  color: grey;
+  width: 94%;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .windowsstacks__navpart__fileslist__fileline {
   display: flex;
@@ -482,6 +503,9 @@
   background-color: #444447;
 }
 .windowsstacks__navpart__fileslist #s-stacks-line {
+  background-color: #444447;
+}
+.windowsstacks__navpart__fileslist #s-document-line:hover {
   background-color: #444447;
 }
 .windowsstacks__container {
@@ -546,31 +570,6 @@
   color: white;
 }
 
-.recommendation-windows {
-  background-color: black;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1001;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  color: white;
-}
-.recommendation-windows__p {
-  font-size: 24px;
-}
-.recommendation-windows__reco-btn {
-  background: none;
-  border: solid 1px;
-  color: white;
-  height: 5%;
-  font-size: 20px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.5rem;
-}
-
 .windowsprofil {
   display: none;
   justify-content: center;
@@ -627,6 +626,224 @@
   background: none;
   border: none;
   color: white;
+}
+
+.windowsprofil-file {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  height: 96.5vh;
+  width: 100vw;
+  z-index: 1;
+}
+.windowsprofil-file__navpart {
+  height: 75%;
+  width: 12%;
+  background-color: #343436;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  margin-bottom: 5%;
+  position: absolute;
+  left: 15.48%;
+  color: white;
+}
+.windowsprofil-file__navpart__topwindows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.windowsprofil-file__navpart__fileslist {
+  display: grid;
+  flex-direction: column;
+  gap: 2px;
+}
+.windowsprofil-file__navpart__fileslist__span {
+  border: solid 1px;
+  color: grey;
+  width: 94%;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.windowsprofil-file__navpart__fileslist__fileline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+  padding: 0rem 1rem;
+  border-radius: 8px;
+  width: 82%;
+  height: 2.3rem;
+}
+.windowsprofil-file__navpart__fileslist__fileline__p {
+  font-size: 14px;
+}
+.windowsprofil-file__navpart__fileslist__fileline__img {
+  height: 16px;
+}
+.windowsprofil-file__navpart__fileslist #pf-project-line {
+  background-color: #343436;
+}
+.windowsprofil-file__navpart__fileslist #pf-project-line:hover {
+  background-color: #444447;
+}
+.windowsprofil-file__navpart__fileslist #pf-stacks-line {
+  background-color: #444447;
+}
+.windowsprofil-file__navpart__fileslist #pf-document-line:hover {
+  background-color: #444447;
+}
+.windowsprofil-file__container {
+  width: 50%;
+  height: 75%;
+  background-color: #222226;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  filter: brightness(100%);
+}
+.windowsprofil-file__container__topwindows {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.windowsprofil-file__container__topwindows__input {
+  width: 55%;
+  height: 2.2rem;
+  background-color: #343436;
+  margin-right: 10%;
+  border-radius: 0.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.windowsprofil-file__container__topwindows__input__p {
+  margin-left: 2%;
+}
+.windowsprofil-file__container__topwindows__input__p__span {
+  color: #a4a4a5;
+}
+.windowsprofil-file__container__topwindows__closebtncontainer {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  margin-right: 1rem;
+}
+.windowsprofil-file__container__topwindows__closebtncontainer__closebtngrp {
+  background-color: #38383b;
+  border-radius: 10rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 11rem;
+  right: 31rem;
+}
+.windowsprofil-file__container__topwindows__closebtncontainer__closebtngrp__closebtn {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+}
+.windowsprofil-file__container__filecontainer {
+  width: 100%;
+  height: 92%;
+  margin-left: 6%;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: start;
+  overflow: auto;
+}
+.windowsprofil-file__container__filecontainer__file {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 20%;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.folder-nav {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  height: 96.5vh;
+  width: 12vw;
+  z-index: 1;
+  margin-left: 13.62%;
+}
+.folder-nav__navpart {
+  height: 75%;
+  width: 100%;
+  background-color: #343436;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  margin-bottom: 41.5%;
+  position: absolute;
+  left: 15.48%;
+  color: white;
+}
+.folder-nav__navpart__topwindows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.folder-nav__navpart__fileslist {
+  display: grid;
+  flex-direction: column;
+  gap: 2px;
+}
+.folder-nav__navpart__fileslist__span {
+  border: solid 1px;
+  color: grey;
+  width: 94%;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.folder-nav__navpart__fileslist__fileline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 6px;
+  padding: 0rem 1rem;
+  border-radius: 8px;
+  width: 82%;
+  height: 2.3rem;
+}
+.folder-nav__navpart__fileslist__fileline__p {
+  font-size: 14px;
+}
+.folder-nav__navpart__fileslist__fileline__img {
+  height: 16px;
+}
+.folder-nav__navpart__fileslist #pf-project-line {
+  background-color: #343436;
+}
+.folder-nav__navpart__fileslist #pf-project-line:hover {
+  background-color: #444447;
+}
+.folder-nav__navpart__fileslist #pf-stacks-line {
+  background-color: #343436;
+}
+.folder-nav__navpart__fileslist #pf-document-line:hover {
+  background-color: #444447;
+}
+.folder-nav__navpart__fileslist #pf-stacks-line:hover {
+  background-color: #444447;
 }
 
 /*# sourceMappingURL=index.css.map */

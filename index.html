@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="stylesheet" href="assets/css/pages/homescreen.css">
     <link rel="icon" href="assets/img/favicon.png">
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- <div id="reco-container" class="recommendation-windows">
+    <div id="reco-container" class="recommendation-windows">
         <img src="assets/img/logo_fedoRA_bleu.svg" alt="logo fedoraphael">
         <h1>Je vous recommande grandement de mettre en plein écran (F11)</h1>
         <p class="recommendation-windows__p">Merci d'avance !</p>
         <button id="close-reco-btn" class="recommendation-windows__reco-btn button">C'est fait</button>
-    </div> -->
-
+    </div>
+    <script src="assets/js/StartingPage.js"></script>
     <img src="assets/img/background.png" alt="" class="background-screen" style="position: absolute; z-index: -1; height: 100vh; width: 100vw; ">
     
     <section class="topbar">
@@ -42,6 +43,29 @@
         </div>
     </nav>
 
+    <div class="folder-nav" id="folder-nav">
+        <div class="folder-nav__navpart">
+            <div class="folder-nav__navpart__topwindows">
+                <p class="folder-nav__navpart__topwindows__p">Fichiers</p>
+            </div>
+            <div class="folder-nav__navpart__fileslist">
+                <div class="folder-nav__navpart__fileslist__fileline stack-nav-folder" id="pf-stacks-line">
+                    <img src="assets/img/smallicon_stacks.svg" alt="icon stacks" class="folder-nav__navpart__fileslist__fileline__img">
+                    <p class="folder-nav__navpart__fileslist__fileline__p">Stack</p>
+                </div>
+                <div class="folder-nav__navpart__fileslist__fileline project-nav-folder" id="pf-project-line">
+                    <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="folder-nav__navpart__fileslist__fileline__img">
+                    <p class="folder-nav__navpart__fileslist__fileline__p">Projets</p>
+                </div>
+                <span class="folder-nav__navpart__fileslist__span"></span>
+                <div class="folder-nav__navpart__fileslist__fileline document-nav-file" id="pf-document-line">
+                    <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="folder-nav__navpart__fileslist__fileline__img">
+                    <p class="folder-nav__navpart__fileslist__fileline__p">Documents</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="wdw-profil" class="windowsprofil">
         <div class="windowsprofil__container">
             <div class="windowsprofil__container__topwindows">
@@ -58,22 +82,29 @@
         </div>
     </div>
 
-    <div id="wdw-project" class="windowsproject">
-        <div class="windowsproject__navpart">
-            <div class="windowsproject__navpart__topwindows">
-                <p class="windowsproject__navpart__topwindows__p">Fichiers</p>
-            </div>
-            <div class="windowsproject__navpart__fileslist">
-                <div class="windowsproject__navpart__fileslist__fileline" id="p-project-line">
-                    <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="windowsproject__navpart__fileslist__fileline__img">
-                    <p class="windowsproject__navpart__fileslist__fileline__p">Projets</p>
+    <div id="wdw-profil-file" class="windowsprofil-file">
+        <div class="windowsprofil-file__container">
+            <div class="windowsprofil-file__container__topwindows">
+                <div class="windowsprofil-file__container__topwindows__input">
+                    <p class="windowsprofil-file__container__topwindows__input__p"> Documents</p>
+                    <img src="" alt="">
                 </div>
-                <div class="windowsproject__navpart__fileslist__fileline" id="p-stacks-line">
-                    <img src="assets/img/smallicon_stacks.svg" alt="icon stacks" class="windowsproject__navpart__fileslist__fileline__img">
-                    <p class="windowsproject__navpart__fileslist__fileline__p">Stacks</p>
+                <div class="windowsprofil-file__container__topwindows__closebtncontainer">
+                    <div id="profil-file-close-btn" class="windowsprofil-file__container__topwindows__closebtncontainer__closebtngrp">
+                        <button class="windowsprofil-file__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
+                    </div>
+                </div>
+            </div>
+            <div class="windowsprofil-file__container__filecontainer">
+                <div class="windowsprofil-file__container__filecontainer__file" id="profil-txt-file">
+                    <img src="assets/img/txt.png" alt="img fichier text">
+                    <p>Profil.txt</p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="wdw-project" class="windowsproject">
         <div class="windowsproject__container">
             <div class="windowsproject__container__topwindows">
                 <div class="windowsproject__container__topwindows__input">
@@ -111,25 +142,10 @@
     </div>
 
     <div id="wdw-stacks" class="windowsstacks">
-        <div class="windowsstacks__navpart">
-            <div class="windowsstacks__navpart__topwindows">
-                <p class="windowsstacks__navpart__topwindows__p">Fichiers</p>
-            </div>
-            <div class="windowsstacks__navpart__fileslist">
-                <div class="windowsstacks__navpart__fileslist__fileline" id="s-project-line">
-                    <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="windowsstacks__navpart__fileslist__fileline__img">
-                    <p class="windowsstacks__navpart__fileslist__fileline__p">Projets</p>
-                </div>
-                <div class="windowsstacks__navpart__fileslist__fileline" id="s-stacks-line">
-                    <img src="assets/img/smallicon_stacks.svg" alt="icon stacks" class="windowsstacks__navpart__fileslist__fileline__img">
-                    <p class="windowsstacks__navpart__fileslist__fileline__p">Stacks</p>
-                </div>
-            </div>
-        </div>
         <div class="windowsstacks__container">
             <div class="windowsstacks__container__topwindows">
                 <div class="windowsstacks__container__topwindows__input">
-                    <p class="windowsstacks__container__topwindows__input__p"> <span class="windowsstacks__container__topwindows__input__p__span"> Portfolio / </span> Stacks</p>
+                    <p class="windowsstacks__container__topwindows__input__p"> <span class="windowsstacks__container__topwindows__input__p__span"> Portfolio / </span> Stack</p>
                     <img src="" alt="">
                 </div>
                 <div class="windowsstacks__container__topwindows__closebtncontainer">

@@ -1,0 +1,26 @@
+.recommendation-windows {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.recommendation-windows__p {
+  font-size: 24px;
+}
+.recommendation-windows__reco-btn {
+  background: none;
+  border: solid 1px;
+  color: white;
+  height: 5%;
+  font-size: 20px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=homescreen.css.map */

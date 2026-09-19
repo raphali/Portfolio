@@ -28,9 +28,18 @@
         }
 
         &__fileslist{
-            display: flex;
+            display: grid;
             flex-direction: column;
             gap: 2px;
+
+            &__span{
+                border: solid 1px;
+                color: grey;
+                width: 94%;
+                justify-self: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
 
             &__fileline{
                 display: flex;
@@ -60,6 +69,10 @@
             }
 
             #s-stacks-line {
+                background-color: $openfolder-grey;
+            }
+
+            #s-document-line:hover {
                 background-color: $openfolder-grey;
             }
         }

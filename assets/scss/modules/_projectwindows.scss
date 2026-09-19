@@ -27,9 +27,18 @@
         }
 
         &__fileslist{
-            display: flex;
             flex-direction: column;
             gap: 2px;
+            display: grid;
+
+            &__span{
+                border: solid 1px;
+                color: grey;
+                width: 94%;
+                justify-self: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
 
             &__fileline{
                 display: flex;
@@ -59,6 +68,10 @@
             }
 
             #p-stacks-line:hover {
+                background-color: $openfolder-grey;
+            }
+
+            #p-document-line:hover {
                 background-color: $openfolder-grey;
             }
         }
@@ -189,11 +202,14 @@
                 &__title {
                     margin-left: 15px;
                     margin-bottom: 0px;
+                    margin-top: 19.92px;
                 }
 
                 &__desc {
                      margin-left: 15px;
                      margin-right: 15px;
+                     margin-top: 16px;
+                     margin-bottom: 16px;
                 }
 
                 &__stacktagcontainer{
