@@ -253,8 +253,7 @@
   padding-bottom: 0.75rem;
   color: white;
   background-color: #262629;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0.5rem;
   position: relative;
 }
 .windowsproject__container__cardcontainer__card__situationtagcontainer {
@@ -563,11 +562,36 @@
   right: 31rem;
 }
 .windowsstacks__container__topwindows__closebtncontainer__closebtngrp__closebtn {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   background: none;
   border: none;
   color: white;
+}
+.windowsstacks__container__cardcontainer {
+  width: calc(90% + 17px);
+  margin-right: -17px;
+  padding-right: 41px;
+  box-sizing: border-box;
+  height: 92%;
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 15%;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-self: end;
+  align-items: flex-start;
+}
+.windowsstacks__container__cardcontainer__card {
+  width: 112px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+.windowsstacks__container__cardcontainer__card__img {
+  height: 7rem;
 }
 
 .windowsprofil {
@@ -581,16 +605,21 @@
 }
 .windowsprofil__container {
   background-color: #262629;
-  width: 60%;
-  height: 60%;
+  width: 35%;
+  height: 40%;
   display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
 }
 .windowsprofil__container__topwindows {
   display: flex;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   align-items: center;
   justify-content: center;
+  background-color: #38383b;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .windowsprofil__container__topwindows__title {
   width: 50%;
@@ -621,11 +650,18 @@
   right: 31rem;
 }
 .windowsprofil__container__topwindows__closebtncontainer__closebtngrp__closebtn {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   background: none;
   border: none;
   color: white;
+}
+.windowsprofil__container__text {
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.windowsprofil__container__text__p {
+  padding: 0.4rem 0rem;
+  font-size: 18px;
 }
 
 .windowsprofil-file {
@@ -750,7 +786,6 @@
   right: 31rem;
 }
 .windowsprofil-file__container__topwindows__closebtncontainer__closebtngrp__closebtn {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   background: none;
   border: none;
@@ -821,8 +856,10 @@
   margin-left: 6px;
   padding: 0rem 1rem;
   border-radius: 8px;
-  width: 82%;
+  width: 95%;
   height: 2.3rem;
+  border: none;
+  color: white;
 }
 .folder-nav__navpart__fileslist__fileline__p {
   font-size: 14px;
@@ -837,6 +874,9 @@
   background-color: #444447;
 }
 .folder-nav__navpart__fileslist #pf-stacks-line {
+  background-color: #343436;
+}
+.folder-nav__navpart__fileslist #pf-document-line {
   background-color: #343436;
 }
 .folder-nav__navpart__fileslist #pf-document-line:hover {

@@ -60,8 +60,9 @@ function OpenAndCloseContact(){
     closebtn.addEventListener('click', function(){
         contact.style.display = 'none';
         spanContact.style.display = 'none';
-        if (project.style.zIndex=="1") {
+        if (project.style.zIndex=="1" && project.style.display!=='none') {
             project.style.zIndex="2";
+            folder_nav.style.zIndex='3';
             project.style.filter = 'brightness(100%)';
             folder_nav.style.filter = "brightness(100%)";
             profil.style.zIndex="1";
@@ -71,8 +72,9 @@ function OpenAndCloseContact(){
             project.style.zIndex="1";
         }
 
-        if (stacks.style.zIndex=="1") {
+        if (stacks.style.zIndex=="1" && stacks.style.display!=='none') {
             stacks.style.zIndex="2";
+            folder_nav.style.zIndex='2';
             stacks.style.filter = 'brightness(100%)';
             folder_nav.style.filter = "brightness(100%)";
             profil.style.zIndex="1";
@@ -82,7 +84,7 @@ function OpenAndCloseContact(){
             stacks.style.zIndex="1";
         }
 
-        if (profil_file.style.zIndex=='1') {
+        if (profil_file.style.zIndex=='1' && profil_file.style.display!=='none') {
             profil_file.style.zIndex='2';
             folder_nav.style.zIndex='3';
             profil_file.style.filter = 'brightness(100%)';
@@ -237,6 +239,7 @@ function OpenAndCloseStacks() {
         stacks.style.display='none';
         spanStack.style.display = 'none';
         folder_nav.style.display = 'none';
+        stacks.style.zIndex='0';
         if (contact.style.zIndex=="1") {
             contact.style.zIndex="2";
             contact.style.filter='brightness(100%)';
@@ -323,6 +326,7 @@ function OpenAndCloseProfil() {
         folder_nav.style.filter = "brightness(70%)";
         profil_file.style.filter = 'brightness(70%)';
         profil.style.filter = 'brightness(100%)';
+        spanProfil.style.display='block';
         if (profil_file.style.zIndex=='2') {
             profil_file.style.zIndex="1";
             folder_nav.style.zIndex='1';

@@ -49,19 +49,19 @@
                 <p class="folder-nav__navpart__topwindows__p">Fichiers</p>
             </div>
             <div class="folder-nav__navpart__fileslist">
-                <div class="folder-nav__navpart__fileslist__fileline stack-nav-folder" id="pf-stacks-line">
+                <button class="folder-nav__navpart__fileslist__fileline stack-nav-folder" id="pf-stacks-line">
                     <img src="assets/img/smallicon_stacks.svg" alt="icon stacks" class="folder-nav__navpart__fileslist__fileline__img">
                     <p class="folder-nav__navpart__fileslist__fileline__p">Stack</p>
-                </div>
-                <div class="folder-nav__navpart__fileslist__fileline project-nav-folder" id="pf-project-line">
+                </button>
+                <button class="folder-nav__navpart__fileslist__fileline project-nav-folder" id="pf-project-line">
                     <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="folder-nav__navpart__fileslist__fileline__img">
                     <p class="folder-nav__navpart__fileslist__fileline__p">Projets</p>
-                </div>
+                </button>
                 <span class="folder-nav__navpart__fileslist__span"></span>
-                <div class="folder-nav__navpart__fileslist__fileline document-nav-file" id="pf-document-line">
+                <button class="folder-nav__navpart__fileslist__fileline document-nav-file" id="pf-document-line">
                     <img src="assets/img/smallicon_folder.svg" alt="icon folder" class="folder-nav__navpart__fileslist__fileline__img">
                     <p class="folder-nav__navpart__fileslist__fileline__p">Documents</p>
-                </div>
+                </button>
             </div>
         </div>
     </div>
@@ -70,14 +70,18 @@
         <div class="windowsprofil__container">
             <div class="windowsprofil__container__topwindows">
                 <div class="windowsprofil__container__topwindows__title">
-                    <h2 class="windowsprofil__container__topwindows__title__h2">Profil</h2>
+                    <h2 class="windowsprofil__container__topwindows__title__h2">Profil.txt</h2>
                 </div>
                 <div class="windowsprofil__container__topwindows__closebtncontainer">
                     <div class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp" id="profil-close-btn">
                         <button class="windowsprofil__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
                     </div>
                 </div>
-
+            </div>
+            <div class="windowsprofil__container__text">
+                <p class="windowsprofil__container__text__p">Bonjour, je m'appelle Raphaël Alizier.</p>
+                <p class="windowsprofil__container__text__p">Je suis un développeur full-stack plus orienté vers le web et je vous présente mes travaux et mes compétences à travers mon portfolio inspiré de l'interface de Fedora. </p>
+                <p class="windowsprofil__container__text__p">Bonne exploration !</p> 
             </div>
         </div>
     </div>
@@ -137,6 +141,25 @@
                         <a href="https://raphali.github.io/ChanvriersDeLOise/" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Site</a>
                     </div>
                 </div>
+                <div class="windowsproject__container__cardcontainer__card">
+                    <div class="windowsproject__container__cardcontainer__card__situationtagcontainer">
+                            <div class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag">
+                                <p class="windowsproject__container__cardcontainer__card__situationtagcontainer__situationtag__text">terminé</p>
+                            </div>
+                    </div>
+                    <img src="assets/img/site_calculatrice.png" alt="" class="windowsproject__container__cardcontainer__card__img">
+                    <h2 class="windowsproject__container__cardcontainer__card__title">Calculatrice</h2>
+                    <p class="windowsproject__container__cardcontainer__card__desc">Une simple calculatrice réalisée sur mon temps libre</p>
+                    <div class="windowsproject__container__cardcontainer__card__stacktagcontainer">
+                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">HTML</p>
+                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">SCSS</p>
+                        <p class="windowsproject__container__cardcontainer__card__stacktagcontainer__stacktag">JavaScript</p>
+                    </div>
+                    <div class="windowsproject__container__cardcontainer__card__btn">
+                        <a href="https://github.com/raphali/calculatrice" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Github</a>
+                        <a href="https://raphali.github.io/calculatrice/" target="_blank" class="windowsproject__container__cardcontainer__card__btn__a"> Site</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -152,6 +175,52 @@
                     <div id="stacks-close-btn" class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp">
                         <button class="windowsstacks__container__topwindows__closebtncontainer__closebtngrp__closebtn button">✕</button>
                     </div>
+                </div>
+            </div>
+            <div class="windowsstacks__container__cardcontainer">
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/html.svg" alt="logo html" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>HTML</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/css.svg" alt="logo css" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>CSS</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/js.svg" alt="logo js" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>JavaScript</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/python.svg" alt="logo python" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>Python</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/php.svg" alt="logo php" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>PHP</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/sass.svg" alt="logo sass" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>Sass</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/react.svg" alt="logo react" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>React</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/symfony.svg" alt="logo symfony" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>Symfony</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/java.svg" alt="logo java" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>Java</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/sql.svg" alt="logo sql" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>SQL</p>
+                </div>
+                <div class="windowsstacks__container__cardcontainer__card">
+                    <img src="assets/img/stackicon/git.svg" alt="logo git" class="windowsstacks__container__cardcontainer__card__img">
+                    <p>Git</p>
                 </div>
             </div>
         </div>

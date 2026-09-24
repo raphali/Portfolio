@@ -49,8 +49,10 @@
                 margin-left: 6px;
                 padding: 0rem 1rem;
                 border-radius: 8px;
-                width: 82%;
+                width: 95%;
                 height: 2.3rem;
+                border: none;
+                color: white;
 
                 &__p{
                     font-size: 14px;
@@ -70,6 +72,10 @@
             }
 
             #pf-stacks-line {
+                background-color: $input-grey;
+            }
+
+            #pf-document-line {
                 background-color: $input-grey;
             }
 

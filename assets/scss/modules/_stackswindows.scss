@@ -137,12 +137,40 @@
                     right:31rem;
 
                     &__closebtn {
-                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                         font-weight: bold;
                         background: none;
                         border: none;
                         color: white;
                     }
+                }
+            }
+        }
+
+        &__cardcontainer{
+            width: calc(90% + 17px);
+            margin-right: -17px;
+            padding-right: 41px;
+            box-sizing: border-box;
+            height: 92%;
+            padding-bottom: 2rem;
+            display: flex;
+            gap: 15%;
+            flex-wrap: wrap;
+            overflow: auto;
+            align-self: end;
+            align-items: flex-start;
+
+            &__card {
+                width: 112px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                gap: 10px;
+
+                &__img {
+                    height: 7rem;
                 }
             }
         }

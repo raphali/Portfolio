@@ -11,16 +11,21 @@
 
     &__container {
         background-color: $backgroundproject-grey;
-        width: 60%;
-        height: 60%;
+        width: 35%;
+        height: 40%;
         display: flex;
+        border-radius: 1rem;
+        flex-direction: column;
 
         &__topwindows{
             display: flex;
             width: 100%;
-            height: 4rem;
+            height: 3rem;
             align-items: center;
             justify-content: center;
+            background-color: $grey;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
 
             &__title {
                 width: 50%;
@@ -53,7 +58,6 @@
                     right:31rem;
 
                     &__closebtn{
-                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                         font-weight: bold;
                         background: none;
                         border: none;
@@ -62,6 +66,16 @@
                 }
             }
 
+        }
+
+        &__text {
+            color: white;
+            padding: 0.5rem 1rem;
+            
+            &__p {
+                padding: 0.4rem 0rem;
+                font-size: 18px;
+            }
         }
     }
 }
@@ -202,7 +216,6 @@
                     right:31rem;
 
                     &__closebtn {
-                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                         font-weight: bold;
                         background: none;
                         border: none;
