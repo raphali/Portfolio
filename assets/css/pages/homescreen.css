@@ -10,6 +10,11 @@
   justify-content: space-evenly;
   color: white;
 }
+@media screen and (max-width: 1279px) {
+  .recommendation-windows {
+    display: none;
+  }
+}
 .recommendation-windows__p {
   font-size: 24px;
 }
@@ -21,6 +26,32 @@
   font-size: 20px;
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
+}
+
+.mobile-message-windows {
+  display: none;
+}
+@media screen and (max-width: 1279px) {
+  .mobile-message-windows {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+  }
+}
+.mobile-message-windows #mobile-message-img {
+  width: 20rem;
+}
+.mobile-message-windows #mobile-message-p {
+  font-size: 20px;
+  text-align: center;
+  width: 95%;
 }
 
 /*# sourceMappingURL=homescreen.css.map */

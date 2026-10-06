@@ -1,0 +1,5 @@
+@mixin pasdispo {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}

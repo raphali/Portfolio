@@ -12,6 +12,10 @@
     justify-content: space-evenly;
     color: white;
 
+    @include pasdispo {
+        display: none;
+    }
+
     &__p {
         font-size: 24px;
     }
@@ -24,5 +28,33 @@
         font-size:20px;
         padding: .5rem 1.5rem;
         border-radius: .5rem;
+    }
+}
+
+.mobile-message-windows {
+    display: none;
+
+    @include pasdispo{
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+    }
+    
+
+    #mobile-message-img {
+        width: 20rem;
+    }
+
+    #mobile-message-p {
+        font-size: 20px;
+        text-align: center;
+        width: 95%;
     }
 }

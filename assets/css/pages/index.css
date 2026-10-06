@@ -54,6 +54,11 @@
   justify-content: center;
   z-index: 1000;
 }
+@media screen and (max-width: 1279px) {
+  .navbarcontainer {
+    display: none;
+  }
+}
 .navbarcontainer__navbar {
   position: absolute;
   display: flex;
@@ -257,7 +262,7 @@
   position: relative;
 }
 .windowsproject__container__cardcontainer__card__situationtagcontainer {
-  width: calc(24rem - 17px);
+  width: 100%;
   height: 2.8rem;
   position: absolute;
   display: flex;
